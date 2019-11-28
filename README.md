@@ -23,7 +23,6 @@ N.B. If for dev don't forget to create a superuser `$ python manage.py createsup
 
 ```
  $ python manage.py migrate
- $ python manage.py loaddata fixtures/init.json
  $ python manage.py runserver
 ```
 
