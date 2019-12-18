@@ -3,7 +3,7 @@ django-extensions
 raven
 Pillow
 
-django-webpack-loader
+django-webpack-loader #<0.6.0
 
 # Payments
 mollie-api-python<2.0
@@ -33,7 +33,7 @@ django-tinymce
 django-recaptcha
 
 # Wiki
-wiki>=0.3b3
+wiki>=0.3b3,<0.5
 
 # Calendar
 icalendar
