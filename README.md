@@ -33,6 +33,20 @@ Also don't forget to bundle the javascript.
  $ npm run build # For prod
 ```
 
+## troubleshooting
+
+1. If `RelatedObjectDoesNotExist: User has no member` after creating a superuser:
+- open a django shell
+- check if there is member: ```Member.objects.all()```
+- if there is a(or plus) members, for each member:
+```
+a = Member()
+a.user = User.objects._insert_selection_method()
+a.save()
+```
+Attention: you could have problems if you reuse the same variable.
+
+
 ## License
 
 This code is under the GPL license (Giant Penis License). The complete text is in the `LICENSE.txt` file.
