@@ -110,3 +110,6 @@ webpack-stats.json
 
 # Macos
 .DS_Store
+
+#visualstudio code
+.vscode/*
